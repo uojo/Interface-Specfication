@@ -10,14 +10,14 @@
 
 少管理URL，通常一个实体的增删改查，给4个接口，命名上也烦心不少：edit、update、new、add、detail ... 哎!
 
-通过响应码提前就做分支处理，没必要接收到 response 再做！系统分层！
+通过响应码提前就做分支处理，没必要接收到 `response` 再做！系统分层！
 
 
 ## B方案 ##
 
 相对于A方案，一个事务需要建立一个URL。
 
-响应码是基于 `200`，对于所有错误检测、调试与反馈是通过 response 中 success、errorCode、errorFields 来完成。
+响应码是基于 `200`，对于所有错误检测、调试与反馈是通过 `response` 中 `success`、`errorCode`、`errorFields` 来完成。
 
 ## 前言 ##
 
